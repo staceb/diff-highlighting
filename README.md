@@ -1,1 +1,1 @@
-# diff-highlighting
+Another, less reliable, way is to prefix APIs that are meant to be hidden with a `_` or do something similar. That works, but it’s not enforced by the compiler, and those APIs show up in tools like code completion, so the programmer has to filter out the noise - although these tools could quite easily support hiding methods with the `_` prefix standard. Also, there is a greater danger of using private APIs if they do something similar to public APIs but are somehow more optimized (because they make additional assumptions about the internal state).
